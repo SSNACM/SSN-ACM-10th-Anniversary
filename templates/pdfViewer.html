@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=devie-width" , initial-scale="1.0" />
+    <title>PDF Viewer</title>
+    <style>
+      #myPDF {
+        width: 100%;
+        height: 975px;
+        position: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="myPDF" src="{% static '/pdf/list.pdf' %}" frameborder="0">
+    </iframe>
+  </body>
+</html>

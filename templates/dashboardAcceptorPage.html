@@ -1,0 +1,75 @@
+{% load static %}
+{% if error %}
+  <script>
+    alert("{{ error }}");
+  </script>
+{% endif %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static '/css/order.css' %}">
+</head>
+<body>    
+<div class="container">
+    <div class="title">Order you food here</div>
+    <form onsubmit="senEmail(); reset(); return false;" action="/acceptorFood/" method="posts">
+        <div class="user-details">
+
+            <div class="input-box">
+                <span class="details">Food Type</span>
+                <input type="text" name="ftype" placeholder="Wet/Dry" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Food Item</span>
+                <input type="text" name="fitem" placeholder="Enter food item name (Optional)">
+            </div>
+            <div class="input-box">
+                <span class="details">Number of Plates</span>
+                <input type="text" name="fnop" placeholder="Enter number of plates" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Date</span>
+                <input type="date" name="fdate" placeholder="Enter date" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Pickup-Time</span>
+                <input type="time" name="ftime" placeholder="Enter Pickup-Time" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" name="fadd" placeholder="Enter your address" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">City</span>
+                <input type="text" name="fcity" placeholder="Enter your city" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="fphn" placeholder="Enter your number" required>
+            </div>
+            
+            <div class="input-box">
+                <span class="details">Email-id</span>
+                <input type="text" name="femail" placeholder="To receive food availability via mail" required>
+            </div>
+            
+            
+
+            <div class="btn">
+                <input type="submit" value="Click here to receive mail">
+                <center><a href="{% url 'pdfViewer' %}">Click here to view the PDF</a></center>
+            </div>
+            
+    
+        
+    </form>
+ </div>
+</body>
+</html>

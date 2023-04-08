@@ -1,0 +1,82 @@
+{% load static %}
+{% if error %}
+<script>
+  alert("{{ error }}");
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Acceptor Sign Up</title>
+    <link rel="stylesheet" href="{% static '/css/signupAcceptorPage.css' %}">
+</head>
+<body>    
+<div class="container">
+    <div class="title">Register as an Acceptor</div>
+    <form action="/acceptor/" method="post">
+        {% csrf_token %}
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="nameAcc" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phoneAcc" placeholder="Enter your Number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" name="addressAcc" placeholder="Enter your address" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Income</span>
+                <input type="text" name="incomeAcc" placeholder="Enter your Annual Income" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="emailAcc" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" name="userAcc" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" name="passwordAcc" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Confirm   Password</span>
+                <input type="password" name="passwordConAcc" placeholder="Confirm your password" required>
+            </div>
+            <div class="gender-d">
+                <input type="radio" name="genderAcc" id="dot-1" value="male">
+                <input type="radio" name="genderAcc" id="dot-2" value="female">
+                <input type="radio" name="genderAcc" id="dot-3" value="No">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                  </label>
+                </div>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Register">
+            </div>
+            
+    
+        
+    </form>
+ </div>
+</body>
+</html>

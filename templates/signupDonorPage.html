@@ -1,0 +1,82 @@
+{% load static %}
+{% if error %}
+<script>
+  alert("{{ error }}");
+</script>
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Donor Sign Up</title>
+    <link rel="stylesheet" href="{% static '/css/signupDonorPage.css' %}">
+</head>
+<body>    
+<div class="container">
+    <div class="title">Register as a Donor</div>
+    <form action="/donor/" method="post">
+        {% csrf_token %}
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="nameDo" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phoneDo" placeholder="Enter your Number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="emailDo" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" name="userDo" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Type</span>
+                <input type="text" name="typeDo" placeholder="Enter Individual/Organisation" required>
+            </div>
+            <div class="input-box">
+                <span class="details">FSSAI No. for Organisation</span>
+                <input type="text" name="fssaiDo" placeholder="Enter FSSAI Number">
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" name="passwordDo" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Confirm   Password</span>
+                <input type="password" name="passwordConDo" placeholder="Confirm your password" required>
+            </div>
+            <div class="gender-d">
+                <input type="radio" name="genderDo" id="dot-1" value="male">
+                <input type="radio" name="genderDo" id="dot-2" value="female">
+                <input type="radio" name="genderDo" id="dot-3" value="No">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                  </label>
+                </div>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Register">
+            </div>
+            
+    
+        
+    </form>
+ </div>
+</body>
+</html>

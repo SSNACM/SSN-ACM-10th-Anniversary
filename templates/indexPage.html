@@ -1,0 +1,314 @@
+{% load static %}
+{% if error %}
+  <script>
+    alert("{{ error }}");
+  </script>
+{% else %}
+  <script>
+    alert("Your queries were sent! You will be contacted soon via email")
+  </script>
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en" style="width: fit-content" id="indexPage">
+  <head style="width: fit-content">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" contents="width=device-width,initial-scale=1.0" />
+    <title>NourishNow</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '/css/index.css' %}"
+    />
+  </head>
+  <body style="width: fit-content">
+    <div class="navbar">
+      <div class="logo-image">
+        <img src="{% static '/images/logo.png' %}" width="35px" height="28px" />
+      </div>
+      <div class="logo">NourishNow</div>
+      <div class="nav-link">
+        <a style="text-decoration: none" href="">Home</a>
+      </div>
+      <div class="nav-link">
+        <a style="text-decoration: none" href="#footer">About</a>
+      </div>
+      <div class="nav-link">
+        <a style="text-decoration: none" href="#footer">Contact</a>
+      </div>
+      <div class="btn">
+        <a style="text-decoration: none" href="{% url 'signinPage' %}">DONATE NOW</a>
+      </div>
+    </div>
+    <header>
+      <div class="header-content">
+        <h2><italic>Together We Can Change</italic></h2>
+        <div class="line">
+          <h1>Dude, let's give some food!</h1>
+        </div>
+        <div style="padding-top: 20px"></div>
+        <center>
+          <button style="margin-top: 30px" class="btn-logo">
+            <a
+              style="text-decoration: none"
+              href="{% url 'signupAcceptorPage' %}"
+              >Be an ACCEPTOR!</a
+            >
+          </button>
+        </center>
+      </div>
+    </header>
+
+    <section class="box-desc">
+      <div class="title">
+        <h2 style="margin: 20px">Be A Donor</h2>
+        <div class="line1"></div>
+        <p style="margin: 20px">
+          "The Measure of life is not its duration but its donation"-Peter
+          Marshall By donating surplus food to those in need, you can make a
+          positive impact in your community. Together, we can alleviate hunger,
+          reduce food waste and create a better world for all.
+        </p>
+        <center>
+          <button class="btn-logo">
+            <a style="text-decoration: none" href="{% url 'signupDonorPage' %}"
+              >Be A Donor</a
+            >
+          </button>
+        </center>
+      </div>
+      <div class="title">
+        <h2 style="margin: 20px">Be a Volunteer</h2>
+        <div class="line2"></div>
+        <p style="margin: 20px">
+          "Alone we can do so little, together we can do so much"-Hellen Keller.
+          Are you passionate about fighting hunger and reducing food waste? Do
+          you want to make a meaningful impact in your community? If so, we
+          invite you to join our team of volunteers at NourishNow.
+        </p>
+        <center>
+          <button class="btn-logo">
+            <a
+              style="text-decoration: none"
+              href="{% url 'signupVolunteerPage' %}"
+              >Be A Volunteer</a
+            >
+          </button>
+        </center>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+    <section class="desc">
+      <div class="inr-desc">
+        <center>
+          <img src="{% static '/images/donor_logo.png' %}" />
+          <div class="txt">
+            <b>Who Are Our Donors?</b>
+            <p>
+              Anyone who wants to donate the leftover surplus food to those in
+              real need of it. You maybe an individual, organization or any
+              business that is willing to come forward to reduce food waste &
+              feed the empty stomach
+            </p>
+          </div>
+        </center>
+      </div>
+      <div class="inr-desc">
+        <center>
+          <img src="{% static '/images/volunteer.logo.png' %}" height="130px" />
+          <div class="txt" style="margin-top: 20px">
+            <b>Who Are Our Volunteers?</b>
+            <p style="height: fit-content">
+              Whether you're an individual, part of a group or organization, or
+              a student looking to fulfill community service hours, we welcome
+              anyone who is passionate about our cause and willing to make a
+              difference.
+            </p>
+          </div>
+        </center>
+      </div>
+      <div class="inr-desc">
+        <center>
+          <img
+            src="{% static '/images/sponsorship_logo.png' %}"
+            width="70px"
+            height="100px"
+          />
+          <div class="txt" style="margin-top: 47px" width="100%" height="200px">
+            <b>Sponsorships</b>
+            <p style="height: fit-content">
+              With your sponsorship, we can continue to build a strong
+              connection between our volunteers, donors and our audience. Your
+              support will help us engage with more people, expand our reach,
+              and create a meaningful impact
+            </p>
+          </div>
+        </center>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+    <section class="review">
+      <center>
+        <img src="{% static '/images/review.png' %}" />
+        <b
+          ><h1 style="font-family: 'Courier New', Courier, monospace">
+            REVIEWS
+          </h1></b
+        >
+        <div class="line3"></div>
+        <p style="font-family: cursive">
+          We value your opinion and would appreciate it if you could take a few
+          moments to provide us with your feedback. Your thoughts help us
+          improve our services and ensure we are meeting your expectations.
+          Please consider leaving us a review or sharing your experience with
+          us. We would love to hear from you!"
+        </p>
+        <button class="feedback">
+          <a
+            style="text-decoration: none"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSebzesIElJiX6zEfCmyIFYtZiffyKErMbJrLQcQBbpt_UYvAA/viewform?usp=sharing"
+            >Feedback</a
+          >
+        </button>
+      </center>
+    </section>
+    <section class="steps">
+      <img src="{% static '/images/steps.jpeg' %}" width="100%" height="100%" />
+    </section>
+    <div style="clear: both"></div>
+    <section style="margin-bottom: 50px">
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img1.png' %}"
+            width="70%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img2.png' %}"
+            width="80%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img3.png' %}"
+            width="70%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img4.png' %}"
+            width="70%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img5.png' %}"
+            width="70%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+      <div class="demo-img">
+        <center>
+          <img
+            src="{%static '/images/demo-img6.png' %}"
+            width="70%"
+            height="250px"
+            style="border-radius: 20px"
+          />
+        </center>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+    <div class="bottom">
+      <div class="footer" id="footer">
+        <div class="left">
+          <p>About</p>
+          <div class="small_text">
+            <p>
+              <br />Welcome to our food donation site! Our mission is to fight
+              hunger by connecting individuals, restaurants, and other food
+              establishments with local charities and organizations that provide
+              food assistance to those in need.
+            </p>
+            <p>
+              By bringing together donors and charities in one easy-to-use
+              platform, we are making a positive impact on the lives of those in
+              need and helping to build stronger, more resilient communities.
+            </p>
+            <p>
+              Thank you for joining us in the fight against hunger & food
+              wastage. Together, we can make a difference!
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <form action="/contactSubmit/" method="post">
+            {% csrf_token %}
+          <h1>CONTACT US</h1>
+          <label>Name</label><br />
+          <input
+            type="text"
+            placeholder="Name"
+            class="footer-txt"
+            name="nameIn"
+          /><br />
+          <label>Email</label><br />
+          <input
+            type="email"
+            placeholder="Email"
+            class="footer-txt"
+            name="emailIn"
+          /><br />
+          <label>Phone no.</label><br />
+          <input
+            type="text"
+            placeholder="Phone number"
+            class="footer-txt"
+            name="phoneIn"
+          /><br />
+          <label>Send a Message</label><br />
+          <input
+            type="text"
+            placeholder="Send a Message"
+            style="height: 70px"
+            class="footer-txt"
+            name="messageIn"
+          /><br />
+          <center>
+            <button sttyle="margin-top:20px">Submit Message</button>
+          </center>
+        </div>
+        </form>
+      </div>
+      <div class="navbarbottom">
+        <p>NourishNow</p>
+        <div>
+          <a href=""
+            ><img src="{%static '/images/logo.png' %}" width="50px"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

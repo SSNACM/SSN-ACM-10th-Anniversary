@@ -1,0 +1,60 @@
+{% load static %} {% if error %}
+<script>
+  alert("{{ error }}");
+</script>
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static '\css\signin.css' %}"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="imgBox">
+        <img src="{% static '\images\bg.jpg' %}" />
+      </div>
+      <div class="contentBox">
+        <div class="formBox">
+          <h2>Login</h2>
+          <form action="/postsign/" method="post">
+            {% csrf_token %}
+            <div class="inputBox">
+              <span>Username</span>
+              <input type="text" name="email" />
+            </div>
+            <div class="inputBox">
+              <span>Password</span>
+              <input type="password" name="password" />
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Sign in" name="" />
+            </div>
+            <div class="inputBox">
+              <p>
+                <center>Don't have an account?</center>
+                <br />
+                <center>
+                  <a href="{% url 'signupDonorPage' %}">Sign up as Donor</a>
+                </center>
+                <br />
+                <center>
+                  <a href="{% url 'signupVolunteerPage' %}"
+                    >Sign up as Volunteer</a
+                  >
+                </center>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
