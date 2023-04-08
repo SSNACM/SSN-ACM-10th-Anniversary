@@ -1,8 +1,6 @@
 import tkinter as tk
 from PIL import ImageTk, Image
 import random
-from random import shuffle
-import pyttsx3
 import pygame
 
 
