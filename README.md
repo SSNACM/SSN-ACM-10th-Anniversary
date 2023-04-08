@@ -18,6 +18,7 @@ command for windows 10 : py detect.py [IMG-FILE_PATH]
   -URLs
 
   -->https://www.kaggle.com/srikanthsaravanan/cnn-brain-tumor-classification
+  
   -->https://colab.research.google.com/drive/1U8fL62AdRto8ByZyUozAGVKnorFQyYMW?usp=sharing
   
   -output files
