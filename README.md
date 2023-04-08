@@ -15,7 +15,7 @@ The successful completion of this project will have significant implications for
 
 #open terminal at the current directory and execute the "detect.py" in terminal with path of the image file of MRI scan of Brain as command line argument
 
-  -->example: 
+  -example: 
 
 command for windows 10 : py detect.py [IMG-FILE_PATH]
 
@@ -23,21 +23,21 @@ command for windows 10 : py detect.py [IMG-FILE_PATH]
 
 #our project work's 
 
-  -URLs
+  **-URLs**
 
-  -->https://www.kaggle.com/srikanthsaravanan/cnn-brain-tumor-classification
+  -https://www.kaggle.com/srikanthsaravanan/cnn-brain-tumor-classification
   
-  -->https://colab.research.google.com/drive/1U8fL62AdRto8ByZyUozAGVKnorFQyYMW?usp=sharing
+  -https://colab.research.google.com/drive/1U8fL62AdRto8ByZyUozAGVKnorFQyYMW?usp=sharing
   
-  -output files
+  *-output files*
   
-  -->https://drive.google.com/drive/folders/1rgw9sAI-mP36VH3YH2N8cRKZnTxZutZV?usp=share_link
+  -https://drive.google.com/drive/folders/1rgw9sAI-mP36VH3YH2N8cRKZnTxZutZV?usp=share_link
     
     [this folder contains files saved using both keras and json]
 
 **Requirements:**
 
-  ->latest version python
-  ->packages: keras, opencv-python, numpy.
+  -latest version python
+  -packages: keras, opencv-python, numpy.
   
  
