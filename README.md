@@ -6,4 +6,10 @@
 
 <h2>Instructions on how to run it</h2>
 <p>
-1. Download all the libraries listed below before proceeding.<br>	->pip install django<br>	->pip install firebase_admin<br>	->pip install fpdf<br>
+1. Download all the libraries listed below before proceeding.<br> ->install python<br>	->pip install django<br>	->pip install firebase_admin<br>	->pip install fpdf<br><br>
+2. Now open the "themavericks-nourishnow" repository in command prompt and run the command "python manage.py runserver" or "python3 manage.py runserver"<br><br>
+3. Copy the host link and open it in any browser and work according to the video below.</p>
+
+<h2>Video</h2>
+https://user-images.githubusercontent.com/108167463/230708660-02d0a1ff-f1ba-4fc0-abf9-468ae56a1239.mp4
+
