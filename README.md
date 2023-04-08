@@ -23,3 +23,4 @@ command for windows 10 : py detect.py [IMG-FILE_PATH]
   -output files
   
   -->https://drive.google.com/drive/folders/1rgw9sAI-mP36VH3YH2N8cRKZnTxZutZV?usp=share_link
+    [this folder contains files saved using both keras and json]
