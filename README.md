@@ -1,7 +1,7 @@
 # ArMed
 ### An AR Learning Platform
 
-Image Targets/Thumbnail1.png
+
 
 
 ## Problem Statement:
