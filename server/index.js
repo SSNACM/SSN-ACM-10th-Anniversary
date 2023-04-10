@@ -1,6 +1,5 @@
 const { Configuration, OpenAIApi } = require("openai");
 const express = require('express')
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -19,19 +18,17 @@ app.use(express.json());
 const port = 3080;
 
 app.post('/', async(req,res) => {
-
     const {form} = req.body;
     let response;
     try {
         response = await openai.createCompletion({
             model: "text-davinci-003",
-            prompt: `${form}`,
-            max_tokens: 64,
-            temperature: 1,
+            prompt: form,
+            max_tokens: 1000,
+            temperature: 0.7,
             top_p: 1,
             n: 1,
         });
-
         res.json({
             data : response.data.choices[0].text
         })
