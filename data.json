@@ -1,0 +1,30 @@
+{
+    "topic": "ReactJS",
+    "subtopics": [
+        {
+            "description": "React Components are the building blocks of any React application. They are small and reusable pieces of code that return a React element (i.e. a piece of UI) based on the props passed to it",
+            "name": "React components"
+        },
+        {
+            "description": "JSX is a syntax extension to JavaScript, and it allows you to write HTML-like tags in your JavaScript. With JSX, one can write concise, easy-to-read React.js code",
+            "name": "JSX"
+        },
+        {
+            "description": "A virtual DOM is a lightweight copy of the actual DOM (Document Object Model), which is used for manipulating web pages. ReactJS uses a highly optimized virtual DOM, which makes it more efficient compared to other frameworks",
+            "name": "Virtual DOM"
+        },
+        {
+            "description": "State and Props are two fundamental concepts in React. State is used for keeping track of the internal state of the component, while Props are used for passing data down the component tree from a parent component",
+            "name": "State and Props"
+        },
+        {
+            "description": "React Native is a framework for building mobile applications using React. With React Native, one can create mobile apps that look and feel like native iOS or Android apps, using only JavaScript",
+            "name": "React Native"
+        },
+        {
+            "description": "ReactJS provides reusable UI components that help to build complex interfaces quickly and easily. These components can be easily configured and customized according to the specific needs of an application.",
+            "name": "Reusable UI Components"
+        }
+    ]
+}
+
