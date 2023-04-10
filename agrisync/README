@@ -1,0 +1,7 @@
+CROP YIELD PREDICTION
+As of now, we are working on developing the front end, but the machine learning model has been trained and recommends the crops to be grown according to the input values.
+We have put in standard input values,they can be changed to see variation in the o/p.
+The o/p displays a list of crops from best to worst to be grown according to the i/p.
+
+The trained model has been loaded already, so to run this project :
+Run the main.py file, the o/p will be visible in the terminal.
