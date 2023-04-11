@@ -25,19 +25,22 @@ command for windows 10 : py detect.py [IMG-FILE_PATH]
 
   **-URLs**
 
-  -https://www.kaggle.com/srikanthsaravanan/cnn-brain-tumor-classification
+  [https://www.kaggle.com/srikanthsaravanan/cnn-brain-tumor-classification]
   
-  -https://colab.research.google.com/drive/1U8fL62AdRto8ByZyUozAGVKnorFQyYMW?usp=sharing
+  **for testing**
+  
+  [https://colab.research.google.com/drive/1U8fL62AdRto8ByZyUozAGVKnorFQyYMW?usp=sharing]
   
   *-output files*
   
-  -https://drive.google.com/drive/folders/1rgw9sAI-mP36VH3YH2N8cRKZnTxZutZV?usp=share_link
+  [https://drive.google.com/drive/folders/1rgw9sAI-mP36VH3YH2N8cRKZnTxZutZV?usp=share_link]
     
-    [this folder contains files saved using both keras and json]
+    ->this folder contains files saved using both keras and json
 
 **Requirements:**
 
   -latest version python
+  
   -packages: keras, opencv-python, numpy.
   
  
