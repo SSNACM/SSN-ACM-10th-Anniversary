@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/static/images/food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Other styles */
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  background: linear-gradient(45deg, #ff6b8e, #ff8e53);
+}
+
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0px;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #ff6b8e;
+}
+
+form .gender-d .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender-d .category {
+  display: flex;
+  width: 89%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+.gender-d .category label {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8px;
+}
+
+.gender-d .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label:nth-child(1) .dot,
+#dot-2:checked ~ .category label:nth-child(2) .dot,
+#dot-3:checked ~ .category label:nth-child(3) .dot {
+  border-color: #d9d9d9;
+  background: #ff6b8e;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .btn {
+  height: 45px;
+  margin: 45px 10px;
+  width: 100%;
+  position: relative;
+}
+
+form .btn input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ff6b8e, #ff8e53);
+}
+
+form .btn input:hover {
+  background: linear-gradient(45deg, #ff6b8e, #ff8e53);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender-d .category {
+    width: 100%;
+  }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+}

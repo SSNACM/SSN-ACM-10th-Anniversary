@@ -1,0 +1,77 @@
+{% load static %}
+{% if error %}
+  <script>
+    alert("{{ error }}");
+  </script>
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static '/css/order.css' %}">
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>    
+        <nav>
+            <div class="nav-link">
+              <a style="text-decoration: none" href={% url 'indexPage' %}>Home</a>
+            </div>
+        </nav> 
+<div class="container">
+    <div class="title">Food Details</div>
+    <form action="/food/" method="post">
+        {% csrf_token %}
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Food Item</span>
+                <input type="text" name="item" placeholder="Enter food item name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Food Type</span>
+                <input type="text" name="type" placeholder="Wet/Dry" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" name="add" placeholder="Enter your address" required>
+            </div>
+            <div class="input-box">
+                <span class="details">City</span>
+                <input type="text" name="city" placeholder="Enter your city" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phn" placeholder="Enter your registered number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Number of Plates</span>
+                <input type="text" name="nop" placeholder="Enter number of plates" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Date</span>
+                <input type="date" name="date" placeholder="Enter date" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Pickup-Time</span>
+                <input type="time" name="time" placeholder="Enter Pickup-Time" required>
+            </div>
+           
+            <div class="btn">
+                <input type="submit" value="SUBMIT">
+            </div>
+            
+    
+        
+    </form>
+ </div>
+</body>
+</html>
