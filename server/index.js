@@ -20,6 +20,7 @@ app.use(cors());
 
 app.post('/', async(req,res) => {
     const {form} = req.body;
+    console.log(form);
     let response;
     try {
         response = await openai.createChatCompletion({

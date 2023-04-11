@@ -93,7 +93,7 @@ const Chat = () =>{
                                     <div className="msg-img" style={{backgroundImage: `url(${aiIcon})`}}></div>
                                     <div className="msg-bubble">
                                         <div className="msg-info">
-                                            <div className="msg-info-name">Gopal</div>
+                                            <div className="msg-info-name">Melthify</div>
                                         </div>
                                         <div className="msg-text">{message.data().messages[1]}</div>
                                     </div>
@@ -105,7 +105,7 @@ const Chat = () =>{
                
             </div>
             <form ref={formRef} onSubmit={handleSubmit} className='px-3 w-full '>
-                <textarea  name="prompt" onChange={handleChange} rows="2" cols="1" placeholder="Ask gopal..." value={form}/>
+                <textarea  name="prompt" onChange={handleChange} rows="2" cols="1" placeholder="Ask Melthify..." value={form}/>
                 <button type="submit" className='rounded focus:bg-inherit focus:outline-0'><img src={sendIcon} alt="send" /></button>
             </form>
         </div>
