@@ -1,6 +1,0 @@
-pygame
-tk
-customtkinter
-SpeechRecognition pydub
-pysttx3
-pillow
