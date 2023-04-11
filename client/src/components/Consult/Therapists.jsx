@@ -22,7 +22,7 @@ const Threapists = () =>{
                 <div className="w-full">
                 <ul>
                     <li>
-                    <a href="https://calendly.com/melthify/consultation-with-juliane-j-kowski">
+                    <a href="https://calendly.com/melthify/consultation-with-juliane-j-kowski" target="_blank">
                     <Card
                         coverImage={th1}
                         title="juliane J Kowski"
@@ -32,21 +32,21 @@ const Threapists = () =>{
                     </a>
                     </li>
                     <li>
-                    <a href="https://calendly.com/melthify/consultation-with-danny-ei-hassan">
+                    <a href="https://calendly.com/melthify/consultation-with-danny-ei-hassan" target="_blank">
                     <Card
                         animation = "down"
                         coverImage={th2}
                         title="Danny EI Hassan"
-                        text="Anxiety, Career Counselling, Aging related concerns, Depressions - LGBTQIA, gender and sexulity topics, Life transitions"
+                        text="Anxiety, Career Counselling, Aging related concerns, Depressions - LGBTQIA, gender and sex related topics, Life transitions"
                     />
                     </a>
                     </li>
                     <li>
-                    <a href="https://calendly.com/melthify/consultation-with-supriya-blair">
+                    <a href="https://calendly.com/melthify/consultation-with-supriya-blair" target="_blank">
                     <Card
                         coverImage={th3}
                         title="Supriya Blair"
-                        text="Womens issues, Racr & Cultural Identity, Parenting, Life Transitions, Self-Esteem, Life Coaching"
+                        text="Womens issues, Race & Cultural Identity, Parenting, Life Transitions, Self-Esteem, Life Coaching"
                         animation = "up"
                     />
                     </a>
