@@ -4,9 +4,9 @@
   Melthify is a comprehensive mental health support system that aims to improve well-being through artificial intelligence and teleconsultation. Our AI-powered chatbot is available 24/7, ready to listen and guide you towards the right resources and support that you need. Additionally, our teleconsultation platform allows you to connect with licensed mental health professionals, ensuring that you get the best possible care.
 </p>
 
-<p><a href = "https://www.canva.com/design/DAFfyYTp_Vw/oIS0m5uUIbD_5UfFcGascQ/edit?utm_content=DAFfyYTp_Vw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Detailed description of the hack </a></p>
 
-<p><a href = "https://www.canva.com/design/DAFfyYTp_Vw/oIS0m5uUIbD_5UfFcGascQ/edit?utm_content=DAFfyYTp_Vw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Detailed description of the hack </a></p>
+
+<p><a href = "https://drive.google.com/file/d/1MdbPwC6psmql3r6-CBt4Ej3wY00vhvQW/view?usp=drivesdk"> Detailed description of the hack </a></p>
 <p><a href = "https://drive.google.com/file/d/187vl1ELse6DerquBuA7GPDwEbOhhLHs9/view?usp=sharing"> Sample video</a></p>
 
 ```console
